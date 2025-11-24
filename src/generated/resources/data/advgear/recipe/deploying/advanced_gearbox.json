@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create:gearbox"
+    },
+    {
+      "item": "create:andesite_casing"
+    }
+  ],
+  "results": [
+    {
+      "id": "advgear:advanced_gearbox"
+    }
+  ]
+}

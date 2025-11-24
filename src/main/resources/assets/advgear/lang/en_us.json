@@ -1,0 +1,14 @@
+{
+  "itemGroup.advgear": "Create: Advanced Gearbox",
+  "block.advgear.advanced_gearbox": "Advanced Gearbox",
+  "advgear.ponder.advanced_gearbox.header": "Relaying rotational force using Advanced Gearboxes",
+  "advgear.ponder.advanced_gearbox.text_1": "Getting all degrees of freedom is tricky and bulky.",
+  "advgear.ponder.advanced_gearbox.text_2": "When placed with cogwheels in the offhand, they will automatically populate.",
+  "advgear.ponder.advanced_gearbox.text_3": "You can use small cogwheels to add outputs to the gearbox.",
+  "advgear.ponder.advanced_gearbox.text_4": "You can also use deployers.",
+  "advgear.ponder.advanced_gearbox.text_5": "An advanced gearbox is a dynamic and compact version of using large cogwheels.",
+  "advgear.ponder.advanced_gearbox_remove.header": "Removing an Advanced Gearbox",
+  "advgear.ponder.advanced_gearbox_remove.text_1": "You may wish to remove a cogwheel from the gearbox.",
+  "advgear.ponder.advanced_gearbox_remove.text_2": "You can use a wrench to remove cogwheels.",
+  "advgear.ponder.advanced_gearbox_remove.text_3": "You can also use deployers."
+}

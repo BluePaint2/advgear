@@ -1,0 +1,320 @@
+{
+  "variants": {
+    "down=false,east=false,north=false,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_0",
+      "uvlock": true
+    },
+    "down=false,east=false,north=false,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_1",
+      "uvlock": true,
+      "x": -90,
+      "y": 90
+    },
+    "down=false,east=false,north=false,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_1",
+      "uvlock": true
+    },
+    "down=false,east=false,north=false,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_2_z",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=false,east=false,north=false,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_1",
+      "uvlock": true,
+      "x": -90
+    },
+    "down=false,east=false,north=false,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_2_y",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "down=false,east=false,north=false,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_x",
+      "uvlock": true
+    },
+    "down=false,east=false,north=false,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true,
+      "y": 90
+    },
+    "down=false,east=false,north=true,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_1",
+      "uvlock": true,
+      "x": 90
+    },
+    "down=false,east=false,north=true,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_2_y",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=false,east=false,north=true,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_x",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=false,east=false,north=true,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=false,east=false,north=true,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_straight",
+      "uvlock": true,
+      "x": 90
+    },
+    "down=false,east=false,north=true,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_y_x",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=false,east=false,north=true,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_x_y",
+      "uvlock": true
+    },
+    "down=false,east=false,north=true,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_z",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=false,east=true,north=false,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_1",
+      "uvlock": true,
+      "x": 90,
+      "y": 90
+    },
+    "down=false,east=true,north=false,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_2_straight",
+      "uvlock": true,
+      "x": 90,
+      "y": 90
+    },
+    "down=false,east=true,north=false,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_z",
+      "uvlock": true
+    },
+    "down=false,east=true,north=false,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_z_y",
+      "uvlock": true
+    },
+    "down=false,east=true,north=false,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_y",
+      "uvlock": true
+    },
+    "down=false,east=true,north=false,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_y_z",
+      "uvlock": true
+    },
+    "down=false,east=true,north=false,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true
+    },
+    "down=false,east=true,north=false,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_x",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=false,east=true,north=true,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_y",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=false,east=true,north=true,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_y_z",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=false,east=true,north=true,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true,
+      "y": 270
+    },
+    "down=false,east=true,north=true,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_x",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "down=false,east=true,north=true,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_y_x",
+      "uvlock": true
+    },
+    "down=false,east=true,north=true,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_straight",
+      "uvlock": true
+    },
+    "down=false,east=true,north=true,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_4_z",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "down=false,east=true,north=true,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_5",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=false,north=false,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_1",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=false,north=false,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_2_z",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "down=true,east=false,north=false,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_straight",
+      "uvlock": true
+    },
+    "down=true,east=false,north=false,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_z_x",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=true,east=false,north=false,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_x",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "down=true,east=false,north=false,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "down=true,east=false,north=false,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_x_z",
+      "uvlock": true
+    },
+    "down=true,east=false,north=false,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_y",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=false,north=true,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_x",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=false,north=true,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "down=true,east=false,north=true,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_x_z",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=false,north=true,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_y",
+      "uvlock": true
+    },
+    "down=true,east=false,north=true,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_x_y",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=false,north=true,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_z",
+      "uvlock": true
+    },
+    "down=true,east=false,north=true,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_4_straight",
+      "uvlock": true,
+      "x": 90,
+      "y": 90
+    },
+    "down=true,east=false,north=true,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_5",
+      "uvlock": true,
+      "x": 90,
+      "y": 90
+    },
+    "down=true,east=true,north=false,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_2_z",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=true,north=false,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_3_z_y",
+      "uvlock": true,
+      "x": 180
+    },
+    "down=true,east=true,north=false,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_z_x",
+      "uvlock": true
+    },
+    "down=true,east=true,north=false,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_straight",
+      "uvlock": true,
+      "x": 90
+    },
+    "down=true,east=true,north=false,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true,
+      "x": 270
+    },
+    "down=true,east=true,north=false,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_x",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=true,east=true,north=false,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_4_y",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=true,east=true,north=false,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_5",
+      "uvlock": true,
+      "x": 90
+    },
+    "down=true,east=true,north=true,south=false,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_3_corner",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    },
+    "down=true,east=true,north=true,south=false,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_4_x",
+      "uvlock": true
+    },
+    "down=true,east=true,north=true,south=false,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_4_y",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "down=true,east=true,north=true,south=false,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_5",
+      "uvlock": true,
+      "x": -90
+    },
+    "down=true,east=true,north=true,south=true,up=false,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_4_z",
+      "uvlock": true,
+      "y": 180
+    },
+    "down=true,east=true,north=true,south=true,up=false,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_5",
+      "uvlock": true
+    },
+    "down=true,east=true,north=true,south=true,up=true,west=false": {
+      "model": "advgear:block/advanced_gearbox/block_5",
+      "uvlock": true,
+      "x": -90,
+      "y": 90
+    },
+    "down=true,east=true,north=true,south=true,up=true,west=true": {
+      "model": "advgear:block/advanced_gearbox/block_6",
+      "uvlock": true
+    }
+  }
+}

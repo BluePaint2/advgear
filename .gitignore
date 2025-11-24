@@ -1,0 +1,19 @@
+# Git
+.github
+
+# Intellij
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# Gradle
+.gradle
+
+# Builds
+build
+run
+runs
+run-data
+src/generated/resources/.cache
