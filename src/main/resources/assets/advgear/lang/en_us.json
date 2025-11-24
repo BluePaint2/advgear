@@ -1,6 +1,7 @@
 {
   "itemGroup.advgear": "Create: Advanced Gearbox",
   "block.advgear.advanced_gearbox": "Advanced Gearbox",
+  "item.advgear.incomplete_advanced_gearbox": "Incomplete Advanced Gearbox",
   "advgear.ponder.advanced_gearbox.header": "Relaying rotational force using Advanced Gearboxes",
   "advgear.ponder.advanced_gearbox.text_1": "Getting all degrees of freedom is tricky and bulky.",
   "advgear.ponder.advanced_gearbox.text_2": "When placed with cogwheels in the offhand, they will automatically populate.",

@@ -1,6 +1,7 @@
 package com.bluepaint.advgear;
 
 import com.mojang.logging.LogUtils;
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
@@ -43,7 +44,13 @@ public class CreateAdvancedGearbox {
             .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .icon(() -> AdvancedGearbox.ADVANCED_GEARBOX.asItem().getDefaultInstance())
             .title(Component.translatable("itemGroup.advgear"))
-            .displayItems((itemDisplayParameters, output) -> REGISTRATE.getAll(Registries.ITEM).forEach((item -> output.accept(item.get()))))
+            .displayItems((itemDisplayParameters, output) -> REGISTRATE.getAll(Registries.ITEM)
+                    .forEach((item -> {
+                        if (!(item.get() instanceof SequencedAssemblyItem)) {
+                            output.accept(item.get());
+                        }
+                    }))
+            )
             .build());
 
     public CreateAdvancedGearbox(IEventBus eventBus, ModContainer container) {

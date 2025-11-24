@@ -1,0 +1,6 @@
+﻿{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "advgear:block/incomplete_advanced_gearbox"
+  }
+}

@@ -2,19 +2,24 @@ package com.bluepaint.advgear;
 
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
+import com.simibubi.create.AllSpriteShifts;
+import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import com.simibubi.create.content.equipment.wrench.IWrenchable;
 import com.simibubi.create.content.kinetics.RotationPropagator;
 import com.simibubi.create.content.kinetics.base.IRotate;
 import com.simibubi.create.content.kinetics.base.KineticBlock;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.simibubi.create.foundation.block.IBE;
 import com.simibubi.create.foundation.data.AssetLookup;
+import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 import com.tterrag.registrate.util.entry.BlockEntry;
+import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.BlockParticleOption;
@@ -227,6 +232,10 @@ public class AdvancedGearbox extends KineticBlock implements IBE<AdvancedGearbox
             .blockstate(AdvancedGearbox::advgearBlock)
             .item()
             .transform(customItemModel())
+            .register();
+
+    public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_ADVANCED_GEARBOX = CreateAdvancedGearbox.REGISTRATE.item("incomplete_advanced_gearbox", SequencedAssemblyItem::new)
+            .model(AssetLookup.itemModel("incomplete_advanced_gearbox"))
             .register();
 
     // Advanced Gearbox block entity that extends regular Gearbox block entity to have similar technology

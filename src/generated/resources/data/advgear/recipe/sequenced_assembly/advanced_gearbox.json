@@ -1,0 +1,33 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:andesite_casing"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "id": "advgear:advanced_gearbox"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "advgear:incomplete_advanced_gearbox"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "advgear:incomplete_advanced_gearbox"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "advgear:incomplete_advanced_gearbox"
+  }
+}

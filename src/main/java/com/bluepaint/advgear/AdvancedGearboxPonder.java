@@ -84,9 +84,9 @@ public class AdvancedGearboxPonder implements PonderPlugin {
             scene.world().setBlock(largeCogFront, defaultLargeCogState.setValue(CogWheelBlock.AXIS, Direction.Axis.Z), false);
             scene.world().setBlock(largeCogRight, defaultLargeCogState.setValue(CogWheelBlock.AXIS, Direction.Axis.X), false);
 
-            BlockState defaultSmallCogState = AllBlocks.COGWHEEL.getDefaultState();
-            scene.world().setBlock(smallCogTop, defaultSmallCogState.setValue(CogWheelBlock.AXIS, Direction.Axis.Y), false);
-            scene.world().setBlock(smallCogBottom, defaultSmallCogState.setValue(CogWheelBlock.AXIS, Direction.Axis.Y), false);
+            BlockState defaultShaftState = AllBlocks.SHAFT.getDefaultState();
+            scene.world().setBlock(smallCogTop, defaultShaftState.setValue(CogWheelBlock.AXIS, Direction.Axis.Y), false);
+            scene.world().setBlock(smallCogBottom, defaultShaftState.setValue(CogWheelBlock.AXIS, Direction.Axis.Y), false);
 
             BlockState defaultGearboxState = AllBlocks.GEARBOX.getDefaultState();
             scene.world().setBlock(gearboxCenter, defaultGearboxState.setValue(GearboxBlock.AXIS, Direction.Axis.X), false);

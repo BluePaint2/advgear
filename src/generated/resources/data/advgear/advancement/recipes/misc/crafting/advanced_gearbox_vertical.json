@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_gearbox": {
+    "has_cogwheel": {
       "conditions": {
         "items": [
           {
-            "items": "create:gearbox"
+            "items": "create:cogwheel"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "advgear:crafting/advanced_gearbox"
+        "recipe": "advgear:crafting/advanced_gearbox_vertical"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_gearbox",
+      "has_cogwheel",
       "has_casing"
     ]
   ],
   "rewards": {
     "recipes": [
-      "advgear:crafting/advanced_gearbox"
+      "advgear:crafting/advanced_gearbox_vertical"
     ]
   }
 }
