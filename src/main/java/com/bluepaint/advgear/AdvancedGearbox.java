@@ -2,8 +2,6 @@ package com.bluepaint.advgear;
 
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import com.simibubi.create.content.equipment.wrench.IWrenchable;
 import com.simibubi.create.content.kinetics.RotationPropagator;
 import com.simibubi.create.content.kinetics.base.IRotate;
@@ -13,7 +11,6 @@ import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.simibubi.create.foundation.block.IBE;
 import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
@@ -307,7 +304,7 @@ public class AdvancedGearbox extends KineticBlock implements IBE<AdvancedGearbox
 
     public void detachKinetics(Level worldIn, BlockPos pos, boolean reAttachNextTick) {
         BlockEntity be = worldIn.getBlockEntity(pos);
-        if (be == null || !(be instanceof KineticBlockEntity))
+        if (!(be instanceof KineticBlockEntity))
             return;
         RotationPropagator.handleRemoved(worldIn, pos, (KineticBlockEntity) be);
         ((KineticBlockEntity) be).removeSource();
@@ -317,10 +314,18 @@ public class AdvancedGearbox extends KineticBlock implements IBE<AdvancedGearbox
             worldIn.scheduleTick(pos, this, 1, TickPriority.EXTREMELY_HIGH);
     }
 
+    public void addParticles(BlockState state, Level level, BlockPos pos, Direction direction) {
+        for (int i = 0; i < 30; i++) {
+            Vec3 particleVec3 = Vec3.atCenterOf(pos);
+            particleVec3.add(Vec3.atLowerCornerOf(direction.getNormal()));
+            level.addParticle(new BlockParticleOption(ParticleTypes.BLOCK, state), particleVec3.x, particleVec3.y, particleVec3.z, 0.0, 0.0, 0.0);
+        }
+    }
+
     @Override
     public void tick(BlockState state, ServerLevel worldIn, BlockPos pos, RandomSource random) {
         BlockEntity be = worldIn.getBlockEntity(pos);
-        if (be == null || !(be instanceof KineticBlockEntity kte))
+        if (!(be instanceof KineticBlockEntity kte))
             return;
         RotationPropagator.handleAdded(worldIn, pos, kte);
     }
@@ -332,12 +337,7 @@ public class AdvancedGearbox extends KineticBlock implements IBE<AdvancedGearbox
         BlockState newState = state.setValue(getDirectionProperty(direction), true);
         detachKinetics(level, pos, true);
 
-        // Add Particles
-        for (int i = 0; i < 30; i++) {
-            Vec3 particleVec3 = Vec3.atCenterOf(pos);
-            particleVec3.add(Vec3.atLowerCornerOf(direction.getNormal()));
-            level.addParticle(new BlockParticleOption(ParticleTypes.BLOCK, state), particleVec3.x, particleVec3.y, particleVec3.z, 0.0, 0.0, 0.0);
-        }
+        addParticles(state, level, pos, direction);
 
         // Remove item
         stack.consume(1, player);
@@ -364,12 +364,7 @@ public class AdvancedGearbox extends KineticBlock implements IBE<AdvancedGearbox
             level.addFreshEntity(itementity);
         }
 
-        // Add Particles
-        for (int i = 0; i < 30; i++) {
-            Vec3 particleVec3 = Vec3.atCenterOf(pos);
-            particleVec3.add(Vec3.atLowerCornerOf(direction.getNormal()));
-            level.addParticle(new BlockParticleOption(ParticleTypes.BLOCK, state), particleVec3.x, particleVec3.y, particleVec3.z, 0.0, 0.0, 0.0);
-        }
+        addParticles(state, level, pos, direction);
 
         return newState;
     }

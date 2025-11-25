@@ -1,6 +1,5 @@
 package com.bluepaint.advgear;
 
-import com.mojang.logging.LogUtils;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.item.ItemDescription;
@@ -19,12 +18,10 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.slf4j.Logger;
 
 @Mod(CreateAdvancedGearbox.MODID)
 public class CreateAdvancedGearbox {
     public static final String MODID = "advgear";
-    public static final Logger LOGGER = LogUtils.getLogger();
 
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MODID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null)
